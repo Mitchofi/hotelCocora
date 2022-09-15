@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<header class="header">
+    <a href="#" class="logo">
+        <img src="images/palmaDeCera.png" id="palma">
+
+    </a>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#products">Products</a>
+        <a href="#review">Review</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="icons">
+        <img src="images/search-icon.png" alt="" height="30">
+        <img src="images/shoppingMark.png" alt="" height="30">
+        <img src="images/menuBar.png" alt="" height="30" id="menuBar">
+        <img src="images/moon2.png" id="icon">
+
+
+    </div>
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" src="images/search-icon.png"></label>
+    </div>
+
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function () {
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) {
+                icon.src = "images/sun.png";
+                palma.src = "images/palmaDeCerawhite.png";
+            } else {
+                icon.src = "images/moon2.png";
+                palma.src = "images/palmaDeCera.png";
+            }
+        }
+    </script>
+</header>
